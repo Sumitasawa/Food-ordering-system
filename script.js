@@ -1,15 +1,14 @@
+const toggleBtn = document.querySelector(".toggle-btn");
 const sidebar = document.getElementById("sidebar");
-const main = document.getElementById("main");
-const toggleBtn = document.getElementById("toggleBtn");
-
+const main = document.querySelector(".main");
+const closeBtn = document.getElementById("close-btn");
 toggleBtn.addEventListener("click", () => {
-  if (window.innerWidth > 768) {
-    sidebar.classList.toggle("collapsed");
-    main.classList.toggle("expanded"); 
-  } else {
-    sidebar.classList.toggle("active");
-    main.classList.toggle("active");
-  }
+  sidebar.classList.add("active");
+  main.classList.add("expanded");
+});
+closeBtn.addEventListener("click", () => {
+  sidebar.classList.remove("active");
+  main.classList.remove("expanded");
 });
 window.onload = function () {
   alert("Order Your Food");

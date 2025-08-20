@@ -25,6 +25,19 @@ body {
 .sidebar .sidebar-heading{
   text-align: center;
 }
+#close-btn {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+#close-btn:hover {
+  background: darkred;
+}
 .sidebar h2 {
   text-align: center;
   margin-bottom: 15px;
@@ -71,6 +84,8 @@ body {
 #sidebar-heading{
   display: flex;
 }
+
+
 /* Main Layout */
 .main {
   flex: 1;
